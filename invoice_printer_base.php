@@ -329,7 +329,7 @@ abstract class InvoicePrinterBase
     if ($recipientData['customer_no'] != 0)
     {
       $pdf->Cell(40, 5, $GLOBALS['locPDFCustomerNumber'] . ': ', 0, 0, 'R');
-      $pdf->Cell(60, 5, $recipientData['customer_no'], 0, 1);
+      $pdf->Cell(28, 5, $recipientData['customer_no'], 0, 1, 'R');
     }
     if ($recipientData['company_id'])
     {
